@@ -4,7 +4,8 @@
   "description": "back-end demo app for Apollo's lift-off IV course",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index",
+    "start-old": "node src/index",
+    "start": "node --optimize_for_size --max_old_space_size=460 src/index",
     "dev": "nodemon src/index"
   },
   "dependencies": {
